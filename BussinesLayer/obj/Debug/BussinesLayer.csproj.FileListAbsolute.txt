@@ -1,0 +1,6 @@
+C:\Users\mgalicia\Desktop\Cipher\BussinesLayer\bin\Debug\BussinesLayer.dll
+C:\Users\mgalicia\Desktop\Cipher\BussinesLayer\bin\Debug\BussinesLayer.pdb
+C:\Users\mgalicia\Desktop\Cipher\BussinesLayer\obj\Debug\BussinesLayer.csproj.AssemblyReference.cache
+C:\Users\mgalicia\Desktop\Cipher\BussinesLayer\obj\Debug\BussinesLayer.csproj.CoreCompileInputs.cache
+C:\Users\mgalicia\Desktop\Cipher\BussinesLayer\obj\Debug\BussinesLayer.dll
+C:\Users\mgalicia\Desktop\Cipher\BussinesLayer\obj\Debug\BussinesLayer.pdb

@@ -1,0 +1,13 @@
+C:\Users\mgalicia\Desktop\Cipher\VisibleLayer\bin\Debug\VisibleLayer.exe.config
+C:\Users\mgalicia\Desktop\Cipher\VisibleLayer\bin\Debug\VisibleLayer.exe
+C:\Users\mgalicia\Desktop\Cipher\VisibleLayer\bin\Debug\VisibleLayer.pdb
+C:\Users\mgalicia\Desktop\Cipher\VisibleLayer\bin\Debug\BussinesLayer.dll
+C:\Users\mgalicia\Desktop\Cipher\VisibleLayer\bin\Debug\BussinesLayer.pdb
+C:\Users\mgalicia\Desktop\Cipher\VisibleLayer\obj\Debug\VisibleLayer.csproj.AssemblyReference.cache
+C:\Users\mgalicia\Desktop\Cipher\VisibleLayer\obj\Debug\VisibleLayer.Main.resources
+C:\Users\mgalicia\Desktop\Cipher\VisibleLayer\obj\Debug\VisibleLayer.Properties.Resources.resources
+C:\Users\mgalicia\Desktop\Cipher\VisibleLayer\obj\Debug\VisibleLayer.csproj.GenerateResource.cache
+C:\Users\mgalicia\Desktop\Cipher\VisibleLayer\obj\Debug\VisibleLayer.csproj.CoreCompileInputs.cache
+C:\Users\mgalicia\Desktop\Cipher\VisibleLayer\obj\Debug\VisibleLayer.csproj.CopyComplete
+C:\Users\mgalicia\Desktop\Cipher\VisibleLayer\obj\Debug\VisibleLayer.exe
+C:\Users\mgalicia\Desktop\Cipher\VisibleLayer\obj\Debug\VisibleLayer.pdb
