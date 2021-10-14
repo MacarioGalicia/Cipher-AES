@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="VisibleLayer.exe" version="1.0.0.0" publicKeyToken="688d9fda8973e800" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="VisibleLayer" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="VisibleLayer.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opciones del manifiesto de Control de cuentas de usuario
+          Si quiere cambiar el nivel de Control de cuentas de usuario de Windows, reemplace el
+          nodo requestedExecutionLevel por alguno de los siguientes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Si desea usar la virtualización de archivos y del Registro para la
+         compatibilidad con versiones anteriores, elimine el nodo requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BussinesLayer.dll" size="6144">
+      <assemblyIdentity name="BussinesLayer" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>tRys4ubKOfqUwYWC7PmI4alTkf9vudCKS6NwW8UC/vk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VisibleLayer.exe" size="15856">
+      <assemblyIdentity name="VisibleLayer" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>iNbr/JLawCYGs9TedPvQs6u/zoOYTFABLDTbFJUUoVc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="VisibleLayer.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-D4JT5OB\mgalicia" issuerKeyHash="5f9890c12e95da1c1928116a68052ba16e974023" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>/vDTqHwovan/HtCh8cxBuyY9I+on8COb+x39oV7XvJM=</DigestValue></Reference></SignedInfo><SignatureValue>SoqIc6MAbry/TZGP3rjKLDPPPD4a9pDYRoY40dskf+ol5/J7mTmlV/UdWJJr3NsJMOTGWLcIuhxm8RHCgZOG4B/eFHNgPPez6KlqxLUzRO/Mu3+EamAGDlB2gaCkWs270ul1aY2y17MqhcXaqOm7g6v0w1cvAs6ioLMLCUDBj1c=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>uilF6llg4MBHov4KClX5rx/D1zGpRCiyaZHp4yo6xRrJMMhSdiEgOOS/BKGM9820AVh6naL8Hq+xPBSmy9f2lQVM2/Vd/ZiQVg+dvS1LIeZNOEzgpAtNEFeSPuBpIuBETGssFMk62ce3kh3+xEjnbJE6+ZKNLHRQ5F8yXwGUE5k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="93bcd75ea1fd1dfb9b23f027ea233d26bb41ccf1a1d01effa9bd287ca8d3f0fe" Description="" Url=""><as:assemblyIdentity name="VisibleLayer.exe" version="1.0.0.0" publicKeyToken="688d9fda8973e800" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-D4JT5OB\mgalicia</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>beNqZ0wMXjoTFaV9rkCYWR/0EV0DWQvrIl5w02Hpl8Q=</DigestValue></Reference></SignedInfo><SignatureValue>HnnVpoPdleeM3RNhAxVFkdsDcdjRs0vAPIsiZB42Iwex4lCKmpedv1HTKq1pr+tpOPtSTXYgkJwYkEtXsxqgr8hlndE8lcEhPk8jSMkIhId9rDFoDS08B9zV1L/GZp/PjXwh44dye1zC3VvUHl19F/A+mqOqhwZOgUTmfH/vT9Q=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>uilF6llg4MBHov4KClX5rx/D1zGpRCiyaZHp4yo6xRrJMMhSdiEgOOS/BKGM9820AVh6naL8Hq+xPBSmy9f2lQVM2/Vd/ZiQVg+dvS1LIeZNOEzgpAtNEFeSPuBpIuBETGssFMk62ce3kh3+xEjnbJE6+ZKNLHRQ5F8yXwGUE5k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB+TCCAWKgAwIBAgIQXKN6Yg35V7NA7WgeQXFyETANBgkqhkiG9w0BAQsFADA7MTkwNwYDVQQDHjAARABFAFMASwBUAE8AUAAtAEQANABKAFQANQBPAEIAXABtAGcAYQBsAGkAYwBpAGEwHhcNMjExMDE0MjM0MzMzWhcNMjIxMDE1MDU0MzMzWjA7MTkwNwYDVQQDHjAARABFAFMASwBUAE8AUAAtAEQANABKAFQANQBPAEIAXABtAGcAYQBsAGkAYwBpAGEwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALopRepZYODAR6L+CgpV+a8fw9cxqUQosmmR6eMqOsUayTDIUnYhIDjkvwShjPfNtAFYep2i/B6vsTwUpsvX9pUFTNv1Xf2YkFYPnb0tSyHmTThM4KQLTRBXkj7gaSLgRExrLBTJOtnHt5Id/sRI52yROvmSjSx0UORfMl8BlBOZAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAtt8KxyqQBw090Ke2LGXwUU9VHOC/MEi6LKsuA6kZP8B41iZlSUW7y42ILJetSgl47FGWty6bTEpluNV+DbZT/HnppnP+UDllpEN49+2ys/uuPbZMk4u0DeFdJbauZDF346c2TObJrT/S2jynPJtW0Zf/DrhQpRbLC7+mgPCUS38=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

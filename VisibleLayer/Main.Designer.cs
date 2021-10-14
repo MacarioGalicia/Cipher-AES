@@ -29,6 +29,7 @@ namespace VisibleLayer
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.label1 = new System.Windows.Forms.Label();
             this.btnCipher = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,6 +43,9 @@ namespace VisibleLayer
             this.txtCipherMessageDecipher = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.lblNumCharacteres = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pbShowImage = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbShowImage)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -116,7 +120,7 @@ namespace VisibleLayer
             this.btnSetKey.Name = "btnSetKey";
             this.btnSetKey.Size = new System.Drawing.Size(100, 32);
             this.btnSetKey.TabIndex = 17;
-            this.btnSetKey.Text = "Cifrado";
+            this.btnSetKey.Text = "Cargar llave";
             this.btnSetKey.UseVisualStyleBackColor = true;
             this.btnSetKey.Click += new System.EventHandler(this.btnSetKey_Click);
             // 
@@ -164,11 +168,35 @@ namespace VisibleLayer
             this.lblNumCharacteres.TabIndex = 22;
             this.lblNumCharacteres.Text = "Caracteres: 0";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(621, 569);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(88, 20);
+            this.label5.TabIndex = 23;
+            this.label5.Text = "Cipher v1.1";
+            // 
+            // pbShowImage
+            // 
+            this.pbShowImage.BackColor = System.Drawing.Color.White;
+            this.pbShowImage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbShowImage.Image = ((System.Drawing.Image)(resources.GetObject("pbShowImage.Image")));
+            this.pbShowImage.Location = new System.Drawing.Point(569, 63);
+            this.pbShowImage.Name = "pbShowImage";
+            this.pbShowImage.Size = new System.Drawing.Size(21, 20);
+            this.pbShowImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbShowImage.TabIndex = 24;
+            this.pbShowImage.TabStop = false;
+            this.pbShowImage.Click += new System.EventHandler(this.pbShowImage_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(736, 604);
+            this.ClientSize = new System.Drawing.Size(742, 605);
+            this.Controls.Add(this.pbShowImage);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.lblNumCharacteres);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtClearMessageDecipher);
@@ -187,6 +215,7 @@ namespace VisibleLayer
             this.Name = "Main";
             this.Text = "Main";
             this.Load += new System.EventHandler(this.Main_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pbShowImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -207,5 +236,7 @@ namespace VisibleLayer
         private System.Windows.Forms.TextBox txtCipherMessageDecipher;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblNumCharacteres;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox pbShowImage;
     }
 }

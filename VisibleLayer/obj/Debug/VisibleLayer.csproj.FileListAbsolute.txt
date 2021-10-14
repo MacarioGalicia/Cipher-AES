@@ -11,3 +11,7 @@ C:\Users\mgalicia\Desktop\Cipher\VisibleLayer\obj\Debug\VisibleLayer.csproj.Core
 C:\Users\mgalicia\Desktop\Cipher\VisibleLayer\obj\Debug\VisibleLayer.csproj.CopyComplete
 C:\Users\mgalicia\Desktop\Cipher\VisibleLayer\obj\Debug\VisibleLayer.exe
 C:\Users\mgalicia\Desktop\Cipher\VisibleLayer\obj\Debug\VisibleLayer.pdb
+C:\Users\mgalicia\Desktop\Cipher\VisibleLayer\bin\Debug\VisibleLayer.exe.manifest
+C:\Users\mgalicia\Desktop\Cipher\VisibleLayer\bin\Debug\VisibleLayer.application
+C:\Users\mgalicia\Desktop\Cipher\VisibleLayer\obj\Debug\VisibleLayer.exe.manifest
+C:\Users\mgalicia\Desktop\Cipher\VisibleLayer\obj\Debug\VisibleLayer.application

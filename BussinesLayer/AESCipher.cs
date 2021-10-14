@@ -91,6 +91,12 @@ namespace BussinesLayer
         {
             _key = key;
         }
+
+        // Obtener llave
+        public string GetKey()
+        {
+            return _key;
+        }
         
         // Concatenar data cifrada con el iv utilizado al realizar el cifrado
         private byte[] concatenateIVAndCipher(byte[] iv, byte[] cipher)

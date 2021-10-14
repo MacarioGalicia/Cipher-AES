@@ -11,5 +11,6 @@ namespace BussinesLayer
         void SetKey(string key);
         string Cipher(string clearMessage);
         string Decipher(string cipherMessage);
+        string GetKey();
     }
 }

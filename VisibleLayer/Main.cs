@@ -31,7 +31,17 @@ namespace VisibleLayer
                 return;
             }
 
-            txtCipherMessageCipher.Text = aes.Cipher(clearMessage);
+            try
+            {
+                txtCipherMessageCipher.Text = aes.Cipher(clearMessage);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Exception: " + ex.InnerException +
+                    "Message: " + ex.Message);
+                txtCipherMessageCipher.Text = string.Empty;
+            }
+            
         }
         private void btnDecipher_Click(object sender, EventArgs e)
         {
@@ -51,7 +61,19 @@ namespace VisibleLayer
                 return;
             }
 
-            txtClearMessageDecipher.Text = aes.Decipher(cipherMessage);
+            try
+            {
+                txtClearMessageDecipher.Text = aes.Decipher(cipherMessage);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Exception: " + ex.GetType()
+                    + "\nMessage: " + ex.Message);
+
+                txtClearMessageDecipher.Text = string.Empty;
+            }
+            
         }
 
         private void btnSetKey_Click(object sender, EventArgs e)
@@ -63,9 +85,9 @@ namespace VisibleLayer
                 return;
             }
 
-            if (key.Length != 64 && key.Length != 32)
+            if (key.Length != 32 && key.Length != 48 && key.Length != 64 )
             {
-                MessageBox.Show("La llave no es de 128 ó 256 bits, no se puede utilizar para efectuar un cifrado AES");
+                MessageBox.Show("La llave no es de 128, 192 ó 256 bits, no se puede utilizar para efectuar un cifrado AES");
                 return;
             }
 
@@ -73,6 +95,24 @@ namespace VisibleLayer
             loadKey = true;
             btnCipher.Enabled = loadKey;
             btnDecipher.Enabled = loadKey;
+
+
+            txtKey.Text = BlindKey(key);
+            MessageBox.Show("Llave cargada ..");
+        }
+
+
+        private string BlindKey(string key)
+        {
+            int length = key.Length;
+            string aux = key.Substring(length - 3, 3);
+
+
+            for (int i = 0; i < length-3; i++)
+            {
+                aux = "*" + aux;
+            }
+            return aux;
         }
 
         private void Main_Load(object sender, EventArgs e)
@@ -85,6 +125,10 @@ namespace VisibleLayer
         {
             lblNumCharacteres.Text = "Caracteres: " + txtKey.Text.Trim().Length;
         }
-        
+
+        private void pbShowImage_Click(object sender, EventArgs e)
+        {
+            txtKey.Text = aes.GetKey();
+        }
     }
 }
